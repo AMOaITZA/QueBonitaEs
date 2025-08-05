@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>¿Quieres ser mi novia?</title>
+  <style>
+    body {
+      background: #f8e1f4;
+      font-family: 'Arial', sans-serif;
+      color: #4b004b;
+      text-align: center;
+      padding: 3em;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+    button {
+      background: #d6336c;
+      border: none;
+      color: white;
+      padding: 1em 2em;
+      margin: 0 1em;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #a02a54;
+    }
+    #gifContainer {
+      margin-top: 2em;
+    }
+    #mensaje {
+      margin-top: 1em;
+      font-weight: bold;
+      color: #d6336c;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <section id="Novia" class="seccion">
+    <h2>¿Quieres ser mi novia?</h2>
+    <button id="btnSi">Sí</button>
+    <button id="btnNo">No</button>
+    <div id="gifContainer">
+      <img id="gif" src="imagen/si.png" alt="Pregunta" width="200" />
+    </div>
+    <p id="mensaje"></p>
+  </section>
+
+  <script>
+    const btnSi = document.getElementById('btnSi');
+    const btnNo = document.getElementById('btnNo');
+    const gif = document.getElementById('gif');
+    const mensaje = document.getElementById('mensaje');
+
+    btnNo.addEventListener('click', () => {
+      mensaje.textContent = "Di que si por fis 😢";
+      alert("No puedes decir que no 😜");
+    });
+
+    btnSi.addEventListener('click', () => {
+      mensaje.textContent = "¡Bravoooooooooooooooo!🎉🎉🥳🥳🎇🎆";
+      gif.src = "https://i.pinimg.com/originals/31/a7/2a/31a72afda250825d993400c3ef28c55c.gif";
+    });
+  </script>
+</body>
+</html>

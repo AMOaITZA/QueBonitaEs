@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://i.pinimg.com/originals/36/a3/cf/36a3cffbccd05e21336c4e418fe3d0e4.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  cursor: url("imagen/cursor.png"), auto;
+}
+
+a, a:hover, a:active, a:focus {
+  cursor: url("imagen/cursor.png"), auto !important;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: url();
+  cursor: url("imagen/cursor.png"), auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: hotpink;
+}
+
+.seccion {
+  position: relative;
+  padding: 4em 2em;
+  background-color: #d00f4980;
+  margin: 2em auto;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1000px;
+  z-index: 0;
+  cursor: url("imagen/cursor.png"), auto;
+}
+
+.seccion::before {
+  content: "";
+  position: absolute;
+  top: -15px; bottom: -15px;
+  left: -15px; right: -15px;
+  border-radius: 25px;
+  background: url('https://i.pinimg.com/originals/38/a2/24/38a2241adacdd2f165b918fa80d6f378.gif');
+  background-size: cover;
+  z-index: -1;
+  cursor: url("imagen/cursor.png"), auto;
+}
+
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: url("imagen/cursor.png"), auto;
+}
+
+.perfil h1 {
+  font-size: 4em;
+  margin: 0.5em 0;
+}
+
+.perfil img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 5px solid white;
+  cursor: url("imagen/cursor.png"), auto;
+}
+
+#vinyl-scroll-wrapper {
+  overflow-x: auto;
+  width: 40%;         
+  max-width: 1000px;  
+  margin: 0 auto;    
+
+  padding: 20px 0;
+}
+
+
+#vinyl-gallery * {
+  all: unset;
+}
+
+#vinyl-gallery {
+  all: initial !important;
+  width: max-content !important;
+  height: 250px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative !important;
+  margin-left: -6px !important;
+}
+
+#vinyl-gallery .vinyl {
+  all: unset !important;
+  perspective: 500px !important;
+  width: 18px !important;
+  transition: width 0.5s !important;
+  position: relative;
+}
+
+#vinyl-gallery .vinyl:hover {
+  width: 148px !important;
+}
+
+#vinyl-gallery a {
+  all: unset !important;
+  display: block !important;
+  cursor: pointer !important;
+}
+
+#vinyl-gallery img {
+  all: unset !important;
+  transition: transform 0.5s, width 0.5s, height 0.5s, margin-top 0.5s !important;
+  width: 180px !important;
+  height: 180px !important;
+  transform: rotateX(0deg) rotateY(25deg) !important;
+  transform-style: preserve-3d !important;
+  border-radius: 4px !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  object-fit: cover !important;
+}
+
+#vinyl-gallery .vinyl:hover img {
+  transform: rotateX(0deg) rotateY(10deg) !important;
+  width: 188px !important;
+  height: 188px !important;
+  margin-top: -2px !important;
+}
+
+#vinyl-gallery .title {
+  color: #fff !important;
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 180px;
+  font-size: 13px;
+  font-weight: bold;
+  
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+#vinyl-gallery .vinyl:hover .title {
+  display: block;
+}
+
+
+.recuerdos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5em;
+}
+
+.recuerdos .item img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease; 
+}
+
+.recuerdos .item img:hover {
+  transform: scale(1.05); 
+}
+
+.recuerdos .item p {
+  margin-top: 0.5em;
+}
+
+.perfil-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+
+.perfil-flex .foto img {
+  width: 300px;
+  height: auto;
+  border: 20px solid; 
+  border-image-source: url('https://watermelon.crd.co/assets/images/gallery16/80292913.gif'); 
+  border-image-slice: 30; 
+  border-image-repeat:repeat; 
+  border-radius:20px;
+}
+
+
+.perfil-flex .gif img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+audio {
+  background-color: #fff0f5;
+  border: 7px solid #ff69b4;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: url("imagen/cursor.png"), auto;
+}
